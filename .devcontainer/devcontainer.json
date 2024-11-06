@@ -1,0 +1,15 @@
+// .devcontainer/devcontainer.json
+{
+  "name": "TensorFlow 2.12 Codespace",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "extensions": [
+    "ms-python.python"
+  ],
+  "settings": {
+    "python.pythonPath": "/usr/local/bin/python"
+  },
+  "postCreateCommand": "python -c \"import tensorflow as tf; print(tf.__version__)\""
+}
+
